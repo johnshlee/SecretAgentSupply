@@ -22,6 +22,8 @@ html {
 	font-family: helvetica;
 }
 
+/* banner */
+
 .banner {
 	height: 25rem;
 	background-image: url(../../resources/images/moto.jpeg);
@@ -54,6 +56,8 @@ html {
 	margin-right: 3rem;
 }
 
+/* navigation */
+
 .nav {
 	width: 100%;
 	display: flex;
@@ -67,9 +71,13 @@ html {
 	color: white;
 	margin: 0.75rem 3rem;
 }
+
+/* Main content begins here */
+
 .container{
 	display: flex;
-	justify-content: center;
+	width: 960px;
+	justify-content: space-between;
 }
 
 .products {
@@ -77,6 +85,8 @@ html {
 	justify-content: center;
 	width: 960px;
 }
+
+/* Pen */
 
 .pen {
 	border: 4px solid black;
@@ -92,12 +102,12 @@ html {
 .pen-image {
 	background-image: url(../../resources/images/pen.png);
 	background-size: cover;
+	background-position:center;
 	width: 9rem;
 	height: 9rem;
 	margin: 2rem 0;
-	display: block;
+	
 }
-
 
 .pen-text p {
 	font-size: 1rem;
@@ -110,36 +120,111 @@ html {
 	
 }
 
+/* Watch */
+
 .watch {
 	border: 4px solid black;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	margin: 0 2rem;
+	justify-content: space-between;
+	align-items: center;
 	width: 15rem;
 	height: 15rem;
+	margin: 0 2rem;
+}
+
+.watch-image {
+	background-image: url(../../resources/images/watch.png);
+	background-size: cover;
+	background-position:center;
+	width: 9rem;
+	height: 9rem;
+	margin: 2rem 0;
+	
 }
 
 .watch-text p {
 	font-size: 1rem;
 	font-family: helvetica;
 	color: white;
-	margin: 0.5rem 0;
+	padding: 0.5rem 0;
+	background-color: black;
+	width: 15rem;
+	text-align: center;
 }
+
+/* Glasses */
 
 .glasses {
 	border: 4px solid black;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	margin: 0 2rem;
+	justify-content: space-between;
+	align-items: center;
 	width: 15rem;
 	height: 15rem;
+	margin: 0 2rem;
+}
+
+.glasses-image {
+	background-image: url(../../resources/images/glasses.png);
+	background-size: 9rem;
+	background-position:center;
+	background-repeat: no-repeat;
+	width: 9rem;
+	height: 9rem;
+	margin: 2rem 0;
 }
 
 .glasses-text p {
 	font-size: 1rem;
 	font-family: helvetica;
 	color: white;
-	margin: 0.5rem 0;
+	padding: 0.5rem 0;
+	background-color: black;
+	width: 15rem;
+	text-align: center;
+}
+
+/* Bottom Page */
+
+.container-2 {
+	display: inline-flex;
+	width: 960px;
+	justify-content: space-between;
+}
+
+/* Location */
+
+.location {
+	display: inline-block;
+	width: 35%;
+}
+
+.location-box{
+	background-color: black;
+	padding: 1rem 0rem 1rem 2rem;
+	width: 100%;
+}
+
+.location-box p {
+	color:white;
+}
+
+/* Hours */
+
+.hours {
+	display: inline-block;
+	width: 35%;
+}
+
+.hours-box {
+	background-color: black;
+	padding: 1rem 0rem 1rem 2rem;
+	width: 100%;
+
+}
+
+.hours-box p {
+	color:white;
 }
